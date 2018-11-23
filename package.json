@@ -1,0 +1,26 @@
+{
+  "name": "personalwebsite",
+  "version": "1.0.0",
+  "description": "my first portfolio",
+  "main": "index.js",
+  "dependencies": {
+    "gh-pages": "^2.0.1",
+    "node": "^11.1.0",
+    "node-sass": "^4.10.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrismintan/personalwebsite"
+  },
+  "author": "Christopher",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chrismintan/chrismintan.github.io/issues"
+  },
+  "homepage": "https://chrismintan.github.io/personalwebsite"
+}
