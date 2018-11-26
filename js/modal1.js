@@ -25,7 +25,7 @@ function initShadow() {
   }, 10)
   setTimeout(function(){
     clearInterval(interval)
-  }, 400)
+  }, 1000)
 }
 
 function drawShadow() {
