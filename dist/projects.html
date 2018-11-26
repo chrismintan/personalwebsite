@@ -13,7 +13,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
     crossorigin="anonymous">
-
+  <link rel="shortcut icon" href="img/favicon.ico">
   <link rel="stylesheet" href="css/main.css">
   <title>View My Work</title>
 </head>
@@ -50,7 +50,7 @@
     </nav>
   </header>
 
-  <main id="work" class="container">
+  <main id="work">
     <h1 class="lg-heading">
       My
       <span class="color-secondary">Work</span>
@@ -59,156 +59,277 @@
       Check out some of my projects...
     </h2>
 
-    <!-- <div class="projects">
-<canvas style="height: 300px; width: 300px;" id="myCanvas"></canvas>
-<button id="testingtime"></button> -->
-<!-- Who's That Pokemon -->
-<!-- Github Link: https://github.com/chrismintan/whos-that-pokemon -->
+
+
     <div class="projects">
-      <div class="item">
-      <div class="item">
-        <a target="_blank" href="https://chrismintan.github.io/whos-that-pokemon/">
-          <img src="img/projects/project1-demo.gif" alt="Project">
-        </a>
 
-        <!-- <button class="project-demos" data-toggle="modal" data-target="#exampleModalCenter2"> -->
-        <a target="_blank" href="https://chrismintan.github.io/whos-that-pokemon/" class="btn-light">
-          <i class="fas fa-eye"></i> Try It!
-        </a>
-        <!-- </button> -->
+<!-- Project 1 -->
+<div class="item">
+  <a target="_blank" href="https://chrismintan.github.io/whos-that-pokemon/">
+    <img class="gifs" src="img/projects/project1-demo.gif" alt="Project">
+  </a>
+  <a href="#" class="btn-light" id="project1-tryme" data-toggle="modal" data-target="#project1">
+    <i class="fas fa-eye"></i> Who's That Pokemon?<br><br><strong>Stack: HTML, CSS, JavaScript</strong>
+  </a>
+  <a target="_blank" href="https://github.com/chrismintan/whos-that-pokemon" class="btn-dark">
+    <i class="fab fa-github"></i> Github Repo
+  </a>
+</div>
 
+<!-- Project 2 -->
+<div class="item">
+  <a target="_blank" href="https://spot-the-fake.herokuapp.com/">
+    <img class="gifs" src="img/projects/project2-demo.gif" alt="Project">
+  </a>
+  <a href="#" class="btn-light" id="project2-tryme" data-toggle="modal" data-target="#project2">
+    <i class="fas fa-eye"></i> Spot the Fake!<br><br><strong>Stack: Node.js, Express, PostgreSQL</strong>
+  </a>
+  <a target="_blank" href="https://github.com/chrismintan/Spot-the-Fake" class="btn-dark">
+    <i class="fab fa-github"></i> Github Repo
+  </a>
+</div>
 
+<!-- Project 3 -->
+<div class="item">
+  <a target="_blank" href="https://project-3-rumu.herokuapp.com/">
+    <img class="gifs" src="img/projects/project3-demo.gif" alt="Project">
+  </a>
+  <a href="#" class="btn-light" id="project3-tryme" data-toggle="modal" data-target="#project3">
+    <i class="fas fa-eye"></i> Ready Up, Meet Up!<br><br><strong>Stack: Ruby on Rails, PostgreSQL</strong>
+  </a>
+  <a target="_blank" href="https://github.com/lamesensei/unit-3-project" class="btn-dark">
+    <i class="fab fa-github"></i> Github Repo
+  </a>
+</div>
 
-        <a target="_blank" href="https://github.com/chrismintan/whos-that-pokemon" class="btn-dark">
-          <i class="fab fa-github"></i> Github Repo
-        </a>
-      </div>
-<!--
-          <button class="project-demos" data-toggle="modal" data-target="#exampleModalCenter1">
-            <a class="btn-light" id="testing1" >
-              <i class="fas fa-eye"></i> Demo
-            </a>
-          </button> -->
+<!-- Project 4 -->
+<div class="item">
+  <a target="_blank" href="https://pollplay.herokuapp.com/">
+    <img class="gifs" src="img/projects/project4-demo.gif" alt="Project">
+  </a>
+  <a href="#" class="btn-light" id="project4-tryme" data-toggle="modal" data-target="#project4">
+    <i class="fas fa-eye"></i> PollPlay<br><br><strong>Stack: React, Node.js, Express, PostgreSQL</strong>
+  </a>
+  <a target="_blank" href="https://github.com/chrismintan/pollplay" class="btn-dark">
+    <i class="fab fa-github"></i> Github Repo
+  </a>
+</div>
 
-<!--           <div class="project-description">
-            <p>Who's That Pokémon is a project inspired by the popular question-and-answer segment that is featured in numerous episodes of the Pokémon anime. I developed this game for a project assignment at General Assembly's Web Development Immersive (WDI) Course.</p>
-            <p>There are three different difficulty settings and two different game modes in this game. The easiest setting is Greyscale which shows Pokémons in the OG Game Boy non colored version. Shadow is the normal version of showing just the silhouette of the Pokémon and the user would have to input the name. Extreme involves having to input both the Pokémon's name and type. For Pokémons with multiple types, only one type would be required to be inputted.</p>
-            <p>Feel free to try out the game and if you are interested in knowing more about how I made it please click below to see my Github repo!</p>
+<!-- PollPlay -->
+  <!-- Modal -->
+  <div class="modal fade" id="project4" style="text-align: center; border: 0;" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div style="background: #B3B3B2FF" class="modal-content" id="modal4">
+        <div class="modal-header" style="border: 0;">
+          <h5 class="modal-title" id="exampleModalLongTitle">PollPlay</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div>
+            <img style="width: 80%" src="img/project4-screenshot.png" alt="Project 4 screenshot">
+            <br>
+            <br>
+            <p>PollPlay is a Spotify-based song voting app. Users with Spotify-Premium accounts can create and host rooms. Rooms are accesible through the room code they choose. Upon entering a room, users can add songs and upvote existing songs. Songs will then be played through the host's Spotify account.</p>
+            <p>A Spotify premium account is required for this app.</p>
+          <p>For the full app please <a target="_blank" href="https://pollplay.herokuapp.com/" style="color: #0F7FFEFF; text-decoration: underline;">click here</a> for the Heroku link. For more information about my thought process and the problems and challenges faced while coding this please see my <a style="color: #0F7FFEFF; text-decoration: underline;" target="_blank" href="https://github.com/chrismintan/pollplay">Github Repo</a>.</p>
+        </div>
+        <div>
+          <div class="collapse" id="collapse4text">
+            <strong>Stack: Ruby on Rails, PostgreSQL</strong>
           </div>
-        </div> -->
-<!--         <a target="_blank" href="https://github.com/chrismintan/whos-that-pokemon" class="btn-dark">
-          <i class="fab fa-github"></i> Github Repo
-        </a> -->
-
-
-
-
-      </div>
-
-<!-- Modal -->
-<!-- <div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Who's That Pokémon</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-
-        <canvas style="height: 300px; width: 300px;" id="myCanvas"></canvas>
-        <button id="testingtime">TEST</button>
-        <input style="text-align: center;" type="text" class="typing-field" id="project1-input" placeholder="Pokémon Name..." onkeyup="">
-
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <a style="color: #0F7FFEFF;" data-toggle="collapse" href="#collapse4text" aria-expanded="false" aria-controls="collapse4text">Read More!</a>
+        </div>
+        <div class="modal-footer" style="border: 0;">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
       </div>
     </div>
   </div>
-</div> -->
-
-
-<!-- Spot the fake -->
-      <div class="item">
-        <a target="_blank" href="https://spot-the-fake.herokuapp.com/">
-          <img src="img/projects/project2-demo.gif" alt="Project">
-        </a>
-
-        <!-- <button class="project-demos" data-toggle="modal" data-target="#exampleModalCenter2"> -->
-        <a target="_blank" href="https://spot-the-fake.herokuapp.com" class="btn-light">
-          <i class="fas fa-eye"></i> Try It!
-        </a>
-        <!-- </button> -->
-
-
-
-        <a target="_blank" href="https://github.com/chrismintan/Spot-the-Fake" class="btn-dark">
-          <i class="fab fa-github"></i> Github Repo
-        </a>
-      </div>
-
-<!-- Modal -->
-<!-- <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div> -->
 
 
 <!-- RUMU -->
-      <div class="item">
-        <a href="">
-          <img src="img/projects/project3-demo.gif" alt="Project">
-        </a>
-        <a target="_blank" href="https://github.com/lamesensei/unit-3-project" class="btn-light">
-          <i class="fas fa-eye"></i> Try It!
-        </a>
-        <a target="_blank" href="https://project-3-rumu.herokuapp.com/" class="btn-dark">
-          <i class="fab fa-github"></i> Github Repo
-        </a>
-      </div>
-
-
-<!-- PollPlay -->
-      <div class="item">
-        <a href="https://pollplay.herokuapp.com/" target="_blank">
-          <img src="img/projects/project4-demo.gif" alt="Project">
-        </a>
-        <a href="https://github.com/chrismintan/pollplay" target="_blank" class="btn-light">
-          <i class="fas fa-eye"></i> Try It!
-        </a>
-        <a target="_blank" href="https://pollplay.herokuapp.com/" class="btn-dark">
-          <i class="fab fa-github"></i> Github Repo
-        </a>
+  <!-- Modal -->
+  <div class="modal fade" id="project3" style="text-align: center; border: 0;" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content" id="modal3">
+        <div class="modal-header" style="border: 0;">
+          <h5 class="modal-title" id="exampleModalLongTitle">Ready Up, Meet Up!</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div>
+            <img style="width: 80%" src="img/project3-screenshot.png" alt="Project 3 screenshot">
+            <br>
+            <p>Ready Up, Meet Up! is an app that helps users determine the minimum travel distance to meet and eat. This app is perfect for groups with picky friends as it takes the hassle out of planning and makes sure the suggested meeting point is fair to all members of the group!</p>
+          </div>
+          <p>For the full app please <a target="_blank" href="https://project-3-rumu.herokuapp.com/" style="color: #0F7FFEFF; text-decoration: underline;">click here</a> for the Heroku link. For more information about my thought process and the problems and challenges faced while coding this please see my <a style="color: #0F7FFEFF; text-decoration: underline;" target="_blank" href="https://github.com/lamesensei/unit-3-project">Github Repo</a>.</p>
+        </div>
+        <div>
+          <div class="collapse" id="collapse3text">
+            <strong>Stack: Ruby on Rails, PostgreSQL</strong>
+          </div>
+          <a style="color: #0F7FFEFF;" data-toggle="collapse" href="#collapse3text" aria-expanded="false" aria-controls="collapse3text">Read More!</a>
+        </div>
+        <div class="modal-footer" style="border: 0;">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
       </div>
     </div>
+  </div>
 
 
+<!-- Spot the fake -->
+  <!-- Modal -->
+  <div class="modal fade" id="project2" style="text-align: center; border: 0;" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content" id="modal2">
+        <div class="modal-header" style="border: 0;">
+          <h5 class="modal-title" id="exampleModalLongTitle">Can You Spot The Fake?</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+
+          <div class='container-fluid'>
+            <div class='row'>
+              <div class='hovering col-sm-12' id='hover1'>
+                <div id='header1'></div>
+                <div class = 'col-sm-12' id='article1'>
+                  <span class="project2-mid">
+                    <img id='img1' />
+                  </span>
+                  <span class="project2-mid" id='headline1'>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class='row'>
+              <div class='col-sm-12' id='notify'>
+                <div>
+                  <a id='link1' href='#' target='_blank'><i style="color: blue;" class="far fa-arrow-alt-circle-up"></i></a>
+                      &nbsp;&nbsp;Click to Read!&nbsp;&nbsp;
+                  <a id='link2' href='#' target='_blank'><i style="color: blue;" class="far fa-arrow-alt-circle-down"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class='container-fluid'>
+            <div class='row'>
+              <div class='hovering col-sm-12' id='hover2'>
+                <div id='header2'></div>
+                <div class='col-sm-12' id='article2'>
+                  <span class="project2-mid">
+                    <img id='img2'/>
+                  </span>
+                  <span class="project2-mid" id='headline2'>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id='start'>
+            <button id='startButton'>Start!</button>
+          </div>
+
+          <br>
+
+          <div>
+            <p>The above is a small demo version of my actual project! Articles are taken via the Reddit API. A random satire article is taken from the subreddit r/TheOnion which only allows posts with articles from Onion News (and its satirical sister sites). Another random article is taken from the subreddit r/nottheonion which mainly focuses on true stories that are so ridiculous that they are often thought to be fake news.</p>
+            <p>For the full game please <a target="_blank" href="https://spot-the-fake.herokuapp.com/" style="color: #0F7FFEFF; text-decoration: underline;">click here</a> for the Heroku link. For more information about my thought process and the problems and challenges faced while coding this please see my <a style="color: #0F7FFEFF; text-decoration: underline;" target="_blank" href="https://github.com/chrismintan/Spot-the-Fake">Github Repo</a>.</p>
+          </div>
+          <div>
+            <div class="collapse" id="collapse2text">
+              <p>Fake news itself is nothing new, but with the advent of new technology, the internet and social media has made it cheap and easy to perpetuate. While I do enjoy reading satire, the problem comes when one is unable to decipher between fact and fiction.</p>
+              <p>This project is a simple game in which two articles are pulled from the web, one being pure satire and the other, albeit real, has such bizarre facts which make it seem made up. Of the two articles, the goal is to spot the fake. You will be informed of which article is real or fake after making your choice and you would also be able to read the articles with the links provided. Happy reading!</p>
+              <p><strong>Stack: Node.js, Express, PostgreSQL</strong></p>
+            </div>
+            <a style="color: #0F7FFEFF;" data-toggle="collapse" href="#collapse2text" aria-expanded="false" aria-controls="collapse2text">Read More!</a>
+          </div>
+
+        </div>
+        <div class="modal-footer" style="border: 0;">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
     </div>
+  </div>
+
+<!-- Who's That Pokemon -->
+  <!-- Modal -->
+  <div class="modal fade" id="project1" style="text-align: center; border: 0;" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content" id="modal1">
+        <div class="modal-header" style="border: 0;">
+          <h5 class="modal-title" id="exampleModalLongTitle">Who's That Pokémon!</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <canvas style="height: 300px; width: 300px;" id="myCanvas"></canvas>
+          <input style="text-align: center;" type="text" class="typing-field" id="project1-input" placeholder="Pokémon Name..." onkeyup="nameCheck()">
+
+          <br>
+
+          <div style="text-align: center;" id="skipping">
+            <button class="btn-primary" style="border-radius: 5px; margin: 5px; font-family: 'pokefont'; font-size: 10px; " id="project1-skip">Skip!</button>
+          </div>
+
+          <br>
+
+          <div>
+            <p>The above is a small demo version of my actual project! For the full game please <a target="_blank" href="https://chrismintan.github.io/whos-that-pokemon/" style="color: #FFFF66; text-decoration: underline;">click here</a>. For more information about my thought process and the problems and challenges faced while coding this please see my <a style="color: #FFFF66; text-decoration: underline;" target="_blank" href="https://github.com/chrismintan/whos-that-pokemon">Github Repo</a>.</p>
+          </div>
+
+          <div>
+            <div class="collapse" id="collapse1text">
+              <p>This project was inspired by the popular question-and-answer segment that is featured in numerous episodes of the Pokémon anime. I developed this game for a project assignment at General Assembly's Web Development Immersive (WDI) Course.</p>
+              <p>Feel free to try out the game and if you are interested in knowing more about how I made it please click below to see my Github repo!</p>
+              <p><strong>Stack: HTML, CSS, JavaScript</strong></p>
+            </div>
+            <a style="color: #0F7FFEFF;" data-toggle="collapse" href="#collapse1text" aria-expanded="false" aria-controls="collapse1text">Read More!</a>
+          </div>
+
+        </div>
+        <div class="modal-footer" style="border: 0;">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
   </main>
 
   <footer id="main-footer">
-    Copyright &copy; 2018
+    <div style="transform: translateY(-10px);">
+      <strong style="font-size: 30px;">©</strong>hristopher&nbsp;Tan&nbsp;
+      <a data-toggle="tooltip" data-placement="top" title="Resume" href="img/cv.pdf" target="_blank"><img src="img/resume.png"></a>&nbsp;
+      <a data-toggle="tooltip" data-placement="top" title="Email me" href="mailto:chrismintan91@gmail.com?Subject=Hello%20there!"><img src="img/email.png" /></a>&nbsp;
+      <a data-toggle="tooltip" data-placement="top" title="Github Profile" target="_blank" href="https://github.com/chrismintan"><img src="img/github.png" /></a>&nbsp;
+      <a data-toggle="tooltip" data-placement="top" title="LinkedIn Profile" target="_blank" href="https://www.linkedin.com/in/chrismintan/"><img src="img/linkedin.png" /></a>&nbsp;
+
+    </div>
   </footer>
 
+  <script>
+  $(document).ready(function(){
+      $('[data-toggle="tooltip"]').tooltip();
+  });
+  </script>
   <script src="js/main.js"></script>
   <script src="js/modal1.js"></script>
+  <script src="js/modal2.js"></script>
 </body>
 
 </html>

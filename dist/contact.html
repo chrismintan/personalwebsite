@@ -13,7 +13,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
     crossorigin="anonymous">
-
+  <link rel="shortcut icon" href="img/favicon.ico">
   <link rel="stylesheet" href="css/main.css">
   <title>Contact Me</title>
 </head>
@@ -60,21 +60,34 @@
     </h2>
     <div class="boxes">
       <div>
-        <span class="color-secondary">Email: </span> 
+        <span class="color-secondary">Email: </span>
         <a href="mailto:chrismintan91@gmail.com?Subject=Hello%20there!">chrismintan91@gmail.com</a>
       </div>
       <div>
         <span class="color-secondary">Phone: </span> +65 9626 0422
       </div>
       <div>
-        <span class="color-secondary">Address: </span> 10 Jalan Kembang Melati
+        <span class="color-secondary">Address: </span> 10 Jalan Kembang Melati, Singapore 258772
       </div>
     </div>
   </main>
 
   <footer id="main-footer">
-    Copyright &copy; 2018
+    <div style="transform: translateY(-10px);">
+      <strong style="font-size: 30px;">©</strong>hristopher&nbsp;Tan&nbsp;
+      <a data-toggle="tooltip" data-placement="top" title="Resume" href="img/cv.pdf" target="_blank"><img src="img/resume.png"></a>&nbsp;
+      <a data-toggle="tooltip" data-placement="top" title="Email me" href="mailto:chrismintan91@gmail.com?Subject=Hello%20there!"><img src="img/email.png" /></a>&nbsp;
+      <a data-toggle="tooltip" data-placement="top" title="Github Profile" target="_blank" href="https://github.com/chrismintan"><img src="img/github.png" /></a>&nbsp;
+      <a data-toggle="tooltip" data-placement="top" title="LinkedIn Profile" target="_blank" href="https://www.linkedin.com/in/chrismintan/"><img src="img/linkedin.png" /></a>&nbsp;
+
+    </div>
   </footer>
+
+  <script>
+  $(document).ready(function(){
+      $('[data-toggle="tooltip"]').tooltip();
+  });
+  </script>
 
   <script src="js/main.js"></script>
 </body>

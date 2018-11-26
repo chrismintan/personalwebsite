@@ -165,7 +165,8 @@ main {
         color: #eece1a;
         transition: all 0.5s ease-out; }
   main#home {
-    overflow: hidden; }
+    overflow: hidden;
+    background: #444; }
     main#home h1 {
       margin-top: 20vh; }
 
@@ -201,14 +202,17 @@ main {
 .projects {
   display: grid;
   grid-gap: 0.7rem;
-  grid-template-columns: repeat(2, 1fr); }
-  .projects img {
+  grid-template-columns: repeat(2, 1fr) !important; }
+  .projects .gifs {
     width: 100%;
     border: 3px #fff solid; }
-    .projects img:hover {
+    .projects .gifs:hover {
       opacity: 0.5;
       border-color: #eece1a;
       transition: all 0.5s ease-out; }
+
+.item {
+  display: grid; }
 
 .typing-field {
   font-family: "pokefont";
@@ -238,11 +242,16 @@ main {
   border: 0; }
 
 .project-description {
-  display: block;
   padding: 0 1rem 0.5rem 1rem;
   border: 0;
   background: #c4c4c4;
   color: #333; }
+
+#modal1 {
+  background: #8ac8f5; }
+
+#modal2 {
+  background: url("../img/project2-background.png"); }
 
 .btn, .btn-dark, .btn-light {
   display: block;
@@ -272,7 +281,143 @@ main {
   color: black; }
 
 #myCanvas {
-  z-index: 9999; }
+  z-index: 999;
+  height: 300px;
+  width: 300px; }
+
+#article1 {
+  display: none;
+  border: 1px solid black;
+  margin: 10px 0;
+  cursor: pointer;
+  box-shadow: 1px 1px #B3B3B2FF, 2px 2px #B3B3B2FF, 3px 3px #B3B3B2FF;
+  -webkit-transform: translateX(-3px);
+  transform: translateX(-3px);
+  background-color: white; }
+
+#article2 {
+  display: none;
+  border: 1px solid black;
+  margin: 10px 0;
+  cursor: pointer;
+  box-shadow: 1px 1px #B3B3B2FF, 2px 2px #B3B3B2FF, 3px 3px #B3B3B2FF;
+  -webkit-transform: translateX(-3px);
+  transform: translateX(-3px);
+  background-color: white; }
+
+#img1 {
+  height: 78px;
+  vertical-align: middle;
+  display: table-cell;
+  border: 1px solid #999998FF;
+  border-radius: 4px;
+  margin: 5px; }
+
+#img2 {
+  height: 78px;
+  vertical-align: middle;
+  display: table-cell;
+  border: 1px solid #999998FF;
+  border-radius: 4px;
+  margin: 5px; }
+
+.project2-mid {
+  vertical-align: middle;
+  display: table-cell; }
+
+#notify {
+  object-position: center;
+  text-align: center;
+  margin: 0;
+  font-size: 25px;
+  display: none;
+  color: #FEFEFEFF;
+  text-shadow: 2px 2px #B3B3B2FF; }
+
+#link1 {
+  margin: 10px 0; }
+
+#link2 {
+  margin: 10px 0; }
+
+.hovering {
+  transition: all 0.3s ease-in-out; }
+
+.hovering:hover {
+  -webkit-transform: scale(1.04);
+  -ms-transform: scale(1.04);
+  transform: scale(1.04); }
+
+#header1 {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-bottom: -10px;
+  background-color: #FF4136;
+  box-shadow: 1px 1px #B3B3B2FF, 2px 2px #B3B3B2FF, 3px 3px #B3B3B2FF;
+  -webkit-transform: translateX(-3px);
+  transform: translateX(-3px);
+  border-top-left-radius: 80px 80px;
+  border-top-right-radius: 80px 80px;
+  color: #FEFEFEFF;
+  display: none; }
+
+#header2 {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-bottom: -10px;
+  background-color: #3D9970;
+  box-shadow: 1px 1px #B3B3B2FF, 2px 2px #B3B3B2FF, 3px 3px #B3B3B2FF;
+  -webkit-transform: translateX(-3px);
+  transform: translateX(-3px);
+  border-top-left-radius: 80px 80px;
+  border-top-right-radius: 80px 80px;
+  color: #FEFEFEFF;
+  display: none; }
+
+#startButton {
+  margin-top: 10px;
+  background: #CCCCCBFF;
+  color: #4C4C4BFF;
+  border: none;
+  position: relative;
+  height: 40px;
+  font-size: 1em;
+  padding: 0 2em;
+  cursor: pointer;
+  transition: 800ms ease all;
+  outline: none; }
+
+#startButton:hover {
+  background: #4C4C4BFF;
+  color: #CCCCCBFF; }
+
+#startButton :before, #startButton:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: #CCCCCBFF;
+  transition: 400ms ease all; }
+
+#startButton :after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0; }
+
+#startButton:hover:before, #startButton:hover:after {
+  width: 100%;
+  transition: 800ms ease all; }
+
+.gifs {
+  width: 100%; }
+
+footer img {
+  height: 30px; }
 
 @media screen and (min-width: 1171px) {
   .projects {
@@ -321,6 +466,10 @@ main {
       margin-top: 10vh; }
     main .lg-heading {
       margin-top: 1rem;
-      font-size: 5rem; }
+      font-size: 4rem; }
+  #contact div {
+    font-size: 20px; }
+  p {
+    font-size: 1rem; }
   .projects {
     grid-template-columns: 1fr; } }
