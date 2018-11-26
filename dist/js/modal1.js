@@ -58,7 +58,6 @@ function revealPokemon() {
 }
 
 function clearCanvas() {
-  $("#project1-input").val("");
   var canvas = document.getElementById("myCanvas");
   var ctx = canvas.getContext('2d');
   ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -72,6 +71,7 @@ function nameCheck() {
     setTimeout(function() {
       clearCanvas();
       initShadow();
+      $("#project1-input").val("");
     }, 1000)
   }
 }
