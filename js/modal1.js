@@ -66,8 +66,6 @@ function clearCanvas() {
 
 function nameCheck() {
   let input = $("#project1-input").val().toLowerCase();
-  console.log(input)
-  console.log(POKEMONS[order[0] - 1])
   if ( input == POKEMONS[order[0] - 1].toLowerCase() ) {
     revealPokemon();
     order = order.slice(1);
