@@ -22,10 +22,10 @@ shuffle();
 function initShadow() {
   let interval = setInterval(function(){
     drawShadow();
-  }, 10)
+  }, 5)
   setTimeout(function(){
     clearInterval(interval)
-  }, 1000)
+  }, 2000)
 }
 
 function drawShadow() {
